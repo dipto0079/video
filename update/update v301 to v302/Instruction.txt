@@ -1,0 +1,2 @@
+1. upload and replace/overwrite "application" directory to public_htm/root directory
+2. import update.sql to you current database

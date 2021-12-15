@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ovoo-Movie &amp; Video Streaming CMS | Documentation</title>
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a href="http://ovoo.spagreen.net" target="_blank" class="navbar-brand spagreen-logo"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="http://desk.spagreen.net/" target="_blank">Support Request</a></li>
+                        <li><a href="http://spagreen.net/contact-us" target="_blank">Contact</a></li>
+                        <li><a href="https://1.envato.market/spagreen" target="_blank">Envato Profile</a></li>
+                        <li><a href="https://1.envato.market/spagreen" target="_blank">More Products...</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="a-to-top" title="Go to Top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <aside id="nav-side" class="navbar-inverse">
+            <ul class="sidebar-nav">
+                <li class="active"><a href="#welcome">Welcome</a></li>
+                <li><a href="#tabel-of-content">Table of Content</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li class="has-children"><a href="#no-such-id">Setup Guide</a>
+                <ul>
+                    <li><a href="#general-setting">General Setting</a></li>
+                    <li><a href="#logo-setting">Logo &amp; Favicon</a></li>
+                    <li><a href="#footer-setting">Footer Content</a></li>
+                    <li><a href="#seo-setting">SEO &amp; Social</a></li>
+                    <li><a href="#banner-setting">Ad &amp; Banner</a></li>
+                </ul>
+                <li>
+                    <a href="#">Usages</a>
+                    <ul>
+                        <li class="has-children"><a href="#movie-scraper">Movie Scraper</a> </li>
+                        <li><a href="#imdb-import">IMDB Import </a></li>
+                        <li><a href="#new-movie">Create Movie</a></li>
+                        <li><a href="#new-tvseries">Create TV-Series</a></li>
+                        <li><a href="#new-page">Create Page</a></li>
+                        <li><a href="#new-post">Create Post</a></li>
+                    </ul>
+                </li>
+                <li><a href="#compatibility">Compatibility</a></li>
+                <li><a href="#update">Update to V2.0</a></li>
+                <!-- <li><a href="#v21">Update V2.0 to V2.1</a></li>
+                <li><a href="#v22">Update V2.1 to V2.2</a></li>
+                <li><a href="#v25">Update V2.2 to V2.5</a></li> -->
+                <!-- <li><a href="#v251">Update V2.5 to V2.5.1</a></li>
+                <li><a href="#v252">Update V2.5.1 to V2.5.2</a></li>
+                <li><a href="#v253">Update V2.5.2 to V2.5.3</a></li>
+                <li><a href="#v254">Update V2.5.3 to V2.5.4</a></li>
+                <li><a href="#v255">Update V2.5.4 to V2.5.5</a></li>
+                <li><a href="#v256">Update V2.5.5 to V2.5.6</a></li>
+                <li><a href="#v257">Update V2.5.6 to V2.5.7</a></li> -->
+                <!-- <li><a href="#v30">Update V2.5.7 to V3.0.0</a></li>
+                <li><a href="#v301">Update V3.0.0 to V3.0.1</a></li>
+                <li><a href="#v302">Update V3.0.1 to V3.0.2</a></li>
+                <li><a href="#v303">Update V3.0.2 to V3.0.3</a></li>
+                <li><a href="#v304">Update V3.0.3 to V3.0.4</a></li>
+                <li><a href="#v305">Update V3.0.4 to V3.0.5</a></li>
+                <li><a href="#v306">Update V3.0.5 to V3.0.6</a></li>
+                <li><a href="#v310">Update V3.0.6 to V3.1.0</a></li> -->
+                <li><a href="#v311">Update V3.1.0 to V3.1.1</a></li>
+				<li><a href="#v312">Update V3.1.1 to V3.1.2</a></li>
+                <li><a href="#v320">Update V3.1.2 to V3.2.0</a></li>
+                <li><a href="#v321">Update V3.2.0 to V3.2.1</a></li>
+                <li><a href="#v322">Update V3.2.1 to V3.2.2</a></li>
+                <li><a href="#v323">Update V3.2.2 to V3.2.3</a></li>
+                <li><a href="#v324">Update V3.2.3 to V3.2.4</a></li>
+                <li><a href="#v325">Update V3.2.4 to V3.2.5</a></li>
+				<li><a href="#v326">Update V3.2.5 to V3.2.6</a></li>
+                <li><a href="#v327">Update V3.2.6 to V3.2.7</a></li>
+                <li><a href="#v328">Update V3.2.7 to V3.2.8</a></li>
+                <li><a href="#changelog">Change Log</a></li>
+                <li><a href="#credits">Sources &amp; Credits</a></li>
+            </ul>
+        </aside>
+        <div id="main">
+            <div class="panel" id="welcome">
+                <div class="panel-body">
+                    <h2>Welcome!</h2>
+                    <em>“Ovoo-Movie &amp; Video Streaming CMS” Documentation <strong>v2.0</strong> by <strong>Spa Green Creative</strong> - <a href="mailto:support@spagreen.net">support@spagreen.net</a></em>
+                    <div class="bs-callout bs-callout-success">
+                        <h4>Thank you!</h4>
+                        <p>
+                            for purchasing this PHP movie script! If you have any questions that are beyond the scope of this help file, please feel free to create a ticket via our <a href="http://client.spagreen.net/" target="_blank">Support Center</a>
+                            <em>(Do not forget to include your <strong>Purchase Code</strong> that you got from Envato when you purchased this CMS)</em>.
+                            <br />
+                            <br /> Thanks so much!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Table of Contents-->
+            <div class="panel" id="tabel-of-content">
+                <div class="panel-body">
+                    <h2>Table of Contents!</h2>
+                    <ul class="sidebar-nav">
+                        <li class="active"><a href="#welcome">Welcome</a></li>
+                        <li><a href="#tabel-of-content">Table of Content</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li class="has-children"><a href="#no-such-id">Setup Guide</a>
+                        <ul>
+                            <li><a href="#general-setting">General Setting</a></li>
+                            <li><a href="#logo-setting">Logo &amp; Favicon</a></li>
+                            <li><a href="#footer-setting">Footer Content</a></li>
+                            <li><a href="#seo-setting">SEO &amp; Social</a></li>
+                            <li><a href="#banner-setting">Ad &amp; Banner</a></li>
+                        </ul>
+                        <li>
+                            <a href="#">Usages</a>
+                            <ul>
+                                <li class="has-children"><a href="#movie-scraper">Movie Scraper</a> </li>
+                                <li><a href="#imdb-import">IMDB Import </a></li>
+                                <li><a href="#new-movie">Create Movie</a></li>
+                                <li><a href="#new-tvseries">Create TV-Series</a></li>
+                                <li><a href="#new-page">Create Page</a></li>
+                                <li><a href="#new-post">Create Post</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#compatibility">Compatibility</a></li>
+                        <li><a href="#credits">Sources &amp; Credits</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Installation-->
+            <div class="panel" id="installation">
+                <div class="panel-body">
+                    <h2>Installation <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BnOHPZhQQbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <h3>Or follow bellow process</h3>
+                    <p>
+                        Once you download .zip file from CodeCanyon, open it and find <strong>ovoo.zip</strong> inside.
+                        <br /> Copy <strong>ovoo.zip</strong> somewhere on your hard drive and then follow steps below:
+                        <br />
+                        <br /> To install using the built-in installer:
+                    </p>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to <strong>cPanel</strong> &gt; <strong>File Manager</strong>.</li>
+                            <li>Under <strong>Upload</strong> tab, click on "Choose File" and choose <strong>ovoo.zip</strong> from your hard drive.</li>
+                            <li>Open <strong>Any Internet Browser</strong> to install the <strong>Ovoo</strong>.</li>
+                            <li>Type your web address and hit enter.Example(www.yourdomain.com)</li>
+                            <li>If this is the first time you've not installed ovoo, you will get installation page.</li>
+                            <li>Step-1:Check File Write Permission <strong>Then Click Next</strong> to continue with the installation.</li>
+                            <li>Step-2:Enter Purchase Information <strong>Then Click Next</strong> to continue next step.</li>
+                            <li>Step-3:Enter Database login credential information <strong>Then Click Next</strong> to continue next step.</li>
+                            <li>Step-4:Enter Admin login credential information <strong>Then Click Start Installation</strong> to Finish Installation.</li>
+                            <li>If successful, login <strong>To admin dashboard</strong> to manage your system. <strong>Retry</strong> if you are fail to maintain full steps.</li>
+                        </ol>
+                    </div>
+                    <p>
+                        To upload a Ovoon using FTP:
+                    </p>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to your hosting via your FTP client.</li>
+                            <li>Navigate to your public_html directory.</li>
+                            <li>Extract <strong>ovoo.zip</strong> and copy <strong>Ovoo's</strong> files to public_html directory on your host.</li>
+                            <li>Open <strong>Any Internet Browser</strong> to install the <strong>Ovoo</strong>.</li>
+                            <li>Type your web address and hit enter.Example(www.yourdomain.com)</li>
+                            <li>Follow steps to complete.</li>
+                        </ol>
+                    </div>
+                    <div class="bs-callout bs-callout-danger">
+                        <p>
+                            <strong><em>Installation Requirment</em></strong>
+                        </p>
+                        <ul>
+                            <li>PHP 5.4 or Higher.</li>
+                            <li>MySQLi.</li>
+                            <li>GD Library.</li>
+                            <li>Simple XML.</li>
+                            <li>cURL.</li>
+                            <li>mbstring</li>
+                            <li>allow_url_fopen.</li>
+                        </ul>
+                        
+                        <h4>Setup Note</h4>
+                        <p>
+                            In order to work, OVOO must have at least:
+                        </p>
+                        <ul>
+                            <li>'application/config/config.php' is <code>writable</code></li>
+                            <li>'application/config/database.php' is <code>writable</code></li>
+                            <li>'/uploads' directory is <code>writable</code></li>
+                            <li>CURL(php extension) must be <code>enable</code></li>
+                        </ul>
+                        <p>
+                            <strong><em>You will find more info right below on why to set up these...</em></strong>
+                        </p>
+                    </div>
+                    <p>
+                        Start Installation:
+                    </p>
+                    <div class="bs-callout bs-callout-success">
+                        <ol>
+                            <li>Check your preinstallation requirement.
+                                <br>
+                                <code>Note: Click on image to view more larger.</code>
+                                <br>
+                                <img src="assets/img/install-1.png" alt="" title="Setting up Staff members role" />
+                            </li>
+                            <li>Enter database credential,item purchase code &amp; login details.
+                                <br>
+                                <code>Note: Click on image to view more larger.</code>
+                                <br>
+                                <img src="assets/img/install-2.png" alt="" title="Setting up Staff members role" />
+                            </li>
+                            <li>Delete your installation directory! The visit you home page.
+                                <br>
+                                <code>Note: Click on image to view more larger.</code>
+                                <br>
+                                <img src="assets/img/install-3.png" alt="" title="Setting up Staff members role" />
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- SETUP -->
+            <div class="panel" id="general-setting">
+                <div class="panel-body">
+                    <h2>Settings - General Setting <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Once you have installed OVOO and you have logged in as <strong>Administrator</strong> role.
+                        <br /> Go to General Setting From <strong>Setting » General Setting</strong> enter information <strong>like on the image below:</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/general-setting.png" alt="" title="Setting up Staff members role" />
+                </div>
+            </div>
+            <div class="panel" id="logo-setting">
+                <div class="panel-body">
+                    <h2>Settings - Logo &amp; Favicon Setting <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Once you have installed OVOO and you have logged in as <strong>Administrator</strong> role.
+                        <br /> Go to Logo &amp; Favicon Setting From <strong>Setting » Logo &amp; Favicon Setting</strong> enter information <strong>like on the image below:</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/logo-setting.png" alt="" title="Setting up Staff members role" />
+                </div>
+            </div>
+            <div class="panel" id="footer-setting">
+                <div class="panel-body">
+                    <h2>Settings - Footer Content <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Once you have installed OVOO and you have logged in as <strong>Administrator</strong> role.
+                        <br /> Go to Footer Content Setting From <strong>Setting » Footer Content</strong> enter information <strong>like on the image below:</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/footer-setting.png" alt="" title="Setting up Staff members role" />
+                </div>
+            </div>
+            <div class="panel" id="seo-setting">
+                <div class="panel-body">
+                    <h2>Settings - SEO &amp; Social <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Once you have installed OVOO and you have logged in as <strong>Administrator</strong> role.
+                        <br /> Go to SEO &amp; Social Setting From <strong>Setting » SEO &amp; Social</strong> enter information <strong>like on the image below:</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/seo-setting.png" alt="" title="Setting up Staff members role" />
+                    <img src="assets/img/social-setting.png" alt="" title="Setting up Staff members role" />
+                </div>
+            </div>
+            <div class="panel" id="banner-setting">
+                <div class="panel-body">
+                    <h2>Settings - Ad Banner <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Once you have installed OVOO and you have logged in as <strong>Administrator</strong> role.
+                        <br /> Go to Ad Banner From <strong>Setting » Ad Banner</strong> enter information <strong>like on the image below:</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/add-setting.png" alt="" title="Setting up Staff members role" />
+                </div>
+            </div>
+            <!-- usages -->
+            <!-- movie-scraper -->
+            <div class="panel" id="movie-scraper">
+                <div class="panel-body">
+                    <h2>How to use Movie Scraper<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Goto <strong>Videos » Movie Scraper</strong>
+                                <br/>
+                                <code>Note: Click on image to view more larger.</code>
+                                <br/>
+                                <img src="assets/img/scrap-1.png" alt="" title="Setting up Staff members role" />
+                            </li>
+                            <li>Enter Movie Name Use comma when you want to scap multiple movie</li>
+                            <img src="assets/img/scrap-2.png" alt="" title="Setting up Staff members role" />
+                        </ol>
+                    </div>
+                    <h2>Video Tutorial(Movie Scraper)</h2>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_atX1Vrs7Os" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- IMDB import -->
+            <div class="panel" id="imdb-import">
+                <div class="panel-body">
+                    <h2>IMDB Import<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Login to www.themoviedb.org &amp; find your movie.</li>
+                            <li>Then copy tmdbID from browser address bar.</li>
+                            <li>Goto <strong>Videos » New Video</strong>
+                                <br/>
+                                <code>Note: Click on image to view more larger.</code>
+                                <br/>
+                                <img src="assets/img/imdb-import-1.png" alt="" title="" />
+                            </li>
+                            <li>Paste IMDb ID here &amp; click import.</li>
+                            <img src="assets/img/imdb-import-2.png" alt="" title="" />
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- New Movie -->
+            <div class="panel" id="new-movie">
+                <div class="panel-body">
+                    <h2>New Movie<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Goto <strong>Videos » New Video</strong></li>
+                            <li>Enter video information &amp; click create.</li>
+                        </ol>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DZrv95huYUk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- New Movie -->
+            <div class="panel" id="new-tvseries">
+                <div class="panel-body">
+                    <h2>New TV-Series<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Goto <strong>TV-Series » New Video</strong></li>
+                            <li>Enter video information &amp; click create.</li>
+                        </ol>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/riXDmJSYtPo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- New Page -->
+            <div class="panel" id="new-page">
+                <div class="panel-body">
+                    <h2>New Page<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Goto <strong>Pages » New Page</strong></li>
+                            <li>Enter page information &amp; content ,then click create.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- New Post -->
+            <div class="panel" id="new-post">
+                <div class="panel-body">
+                    <h2>New Post<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Login to administrator dashboard.</li>
+                            <li>Goto <strong>Post » New Post</strong></li>
+                            <li>Enter post information &amp; content, then click create.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- COMPATIBILITY -->
+            <div class="panel" id="compatibility">
+                <div class="panel-body">
+                    <h2>Compatibility & Requirements <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Ovoo was made using PHP 5.6 and MySQL 5.7.11 , but since it uses common PHP functions, it should work on older versions as well, but there’s no guarantee.
+                        <br />
+                        <br />
+                        <strong>Minimum System Requirements:</strong>
+                    </p>
+                                                                            <pre><strong>PHP Version: </strong>5.4+
+                                                                        <strong>CURL ENABLED</strong> (php extension)
+                                                                        <strong>Apache - rewrite_module (Apache Module) Must enable for SEO Friendly URL</strong>
+                    <strong>Browser Support:</strong> Google Chrome | Mozilla Firefox | Opera | Safari | Internet Explorer 8+</pre>
+                    <p>
+                        <strong>Recommended:</strong>
+                    </p>
+                                                            <pre><strong>PHP Version: </strong>5.6+
+                                                                        <strong>CURL ENABLED</strong> (php extension)
+                                                                        <strong>MySQL Version: </strong>5.7.x
+                                                                        <strong>Apache - rewrite_module (Apache Module) Must enable for SEO Friendly URL</strong>
+                    <strong>Browser Support:</strong> Google Chrome | Mozilla Firefox | Opera | Safari | Internet Explorer 9+</pre>
+                </div>
+            </div>
+            <!-- update -->
+            <div class="panel" id="update">
+                <div class="panel-body">
+                    <h2>Update to v2.0<a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2><br>
+                    <code>Please note that bellow features will not supported while you will be update from previous version dute to a database structure of v2.0.</code>
+                    <div class="bs-callout bs-callout-danger">
+                        <ol>
+                            <li>Poster Image.</li>
+                            <li>Stars</li>
+                            <li>Genres</li>
+                            <li>Country.</li>
+                            <li>TV-Series</li>
+                        </ol>
+                    </div>
+                    <h3>
+                    Submit a ticket to manual update/migration with bellow info: <br>
+                    <small>Manual Update is valid for previous valid buyer only.</small>
+                    </h3>
+                    <code>TimeLine: 7-15 days to complete.</code><br>
+                    <a href="http://client.spagreen.net/">Submit a ticket</a>
+                    <div class="bs-callout bs-callout-default">
+                        <ol>
+                            <li>Your item purchase code &amp; envato username.</li>
+                            <li>Full Database backup</li>
+                            <li>File &amp; Directories Backup.</li>
+                            <li>Website URL.</li>
+                            <li>Cpanel Access</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel" id="v21">
+                <div class="panel-body">
+                    <h2>Update V2.0 to V2.1 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file and open "update v20 to v21".
+                        <br />Upload and replace all files from "update v20 to v21" to "public_html/application/model/"</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/update_to_21.png" alt="" title="" />
+                </div>
+            </div>
+            <div class="panel" id="v22">
+                <div class="panel-body">
+                    <h2>Update V2.1 to V2.2 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file and open "update v21 to v22".
+                        <br />Upload and replace "Application" directory from "update v21 to v22" to "public_html/application/"</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/ovoo22.png" alt="" title="" />
+                    <p>Open phpmyadmin and select your database.Then goto SQL->paste bellow query->click go </p>
+                    <code>ALTER TABLE `videos` CHANGE `description` `description` LONGTEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL;</code><br>
+                    <img src="assets/img/ovoo22-1.png" alt="" title="" />
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v25">
+                <div class="panel-body">
+                    <h2>Update V2.2 to V2.5 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file and open "update v22 to v25".
+                        <br />Upload and overwrite "Application,assets,uploads" directory from "update v22 to v25" to "public_html/"</strong>
+                        <br>
+                        <code>Note: Click on image to view more larger.</code>
+                    </p>
+                    <img src="assets/img/ovoo25.png" alt="" title="" />
+                    <p>Open phpmyadmin and select your database.Then goto import->brows and select update.sql ->click go </p>
+                    <img src="assets/img/ovoo_25_sql.png" alt="" title="" />
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v251">
+                <div class="panel-body">
+                    <h2>Update V2.5 to V2.5.1 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v25 to v251".
+                        <br />2. Upload and overwrite "Application" directory from "update v25 to v251" to "public_html/"</strong>
+                    </p>
+                    <p>3. Open phpmyadmin and select current database.Then goto import->brows and select update.sql ->click go </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v252">
+                <div class="panel-body">
+                    <h2>Update V2.5.1 to V2.5.2 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v251 to v252".
+                        <br />2. Upload and overwrite "Application" directory from "update v25 to v251" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v253">
+                <div class="panel-body">
+                    <h2>Update V2.5.2 to V2.5.3 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v252 to v253".
+                        <br />2. Upload and overwrite "Application" directory from "update v252 to v253" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v254">
+                <div class="panel-body">
+                    <h2>Update V2.5.3 to V2.5.4 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v253 to v254".
+                        <br />2. Upload and overwrite "Application" directory from "update v253 to v254" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v255">
+                <div class="panel-body">
+                    <h2>Update V2.5.4 to V2.5.5 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v254 to v255".
+                        <br />2. Upload and overwrite "Application" directory from "update v254 to v255" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v256">
+                <div class="panel-body">
+                    <h2>Update V2.5.5 to V2.5.6 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v255 to v256".
+                        <br />2. Upload and overwrite "Application" directory from "update v255 to v256" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+			<div class="panel" id="v257">
+                <div class="panel-body">
+                    <h2>Update V2.5.6 to V2.5.7 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1. Unzip main_file and open "update v256 to v257".
+                        <br />2. Upload and overwrite "Application" directory from "update v256 to v257" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v30">
+                <div class="panel-body">
+                    <h2>Update V2.5.7 to V3.0.0 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1.  Create Full site backup(Manually)- Recommended.<br>
+                        2.  Create a Batabase backup from phpmyadmin(Manually)- Recommended.<br>
+                        3.  Unzip main_file and open "update v257 to v30".<br>
+                        4.  login to database adminpanel(phpmyadmin,adminer) then import update.sql file to your current database.
+                        <br/>2. Upload and overwrite "Application","assets" & "system" directory from "update v257 to v30" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v301">
+                <div class="panel-body">
+                    <h2>Update V3.0 to V3.0.1 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1.  Unzip main_file and open "update v300 to v301".<br>
+                        <br/>2. Upload and overwrite "application","assets" & "uploads" directory from "update v300 to v301" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v302">
+                <div class="panel-body">
+                    <h2>Update V3.0.1 to V3.0.2 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file and open "update v301 to v302".
+                        <br />Upload and overwrite "Application" directory from "update v301 to v302" to "public_html/"</strong>
+                    </p>
+                    <p>Open phpmyadmin and select your database.Then goto import->brows and select update.sql ->click go </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v303">
+                <div class="panel-body">
+                    <h2>Update V3.0.2 to V3.0.3 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file and open "update v302 to v303".
+                        <br />Upload and overwrite "Application" directory from "update v302 to v303" to "public_html/"</strong>
+                    </p>
+                    <p>Open phpmyadmin and select your database.Then goto import->brows and select update.sql ->click go </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v304">
+                <div class="panel-body">
+                    <h2>Update V3.0.3 to V3.0.4 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file.
+                        <br> Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>Click choose file and brows "ovoo304.zip" file from unziped folder "main_file\update\v303 to v304"
+                        <br>Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v305">
+                <div class="panel-body">
+                    <h2>Update V3.0.4 to V3.0.5 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file.
+                        <br> Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>Click choose file and brows "ovoo305.zip" file from unziped folder "main_file\update\v304 to v305"
+                        <br>Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v306">
+                <div class="panel-body">
+                    <h2>Update V3.0.5 to V3.0.6 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file.
+                        <br> Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>Click choose file and brows "ovoo3056.zip" file from unziped folder "main_file\update\v305 to v3056"
+                        <br>Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v310">
+                <div class="panel-body">
+                    <h2>Update V3.0.6 to V3.1.0 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1.  Create Full site backup(Manually)- Recommended.<br>
+                        2.  Create a Database backup from phpmyadmin(Manually)- Recommended.<br>
+                        3.  Unzip main_file and open "update/v306 to v310".<br>
+                        4.  login to database adminpanel(phpmyadmin,adminer) then import update.sql file from "update/v306 to v310/database/" to your current database.<br/>
+                        5.  Upload and replace all files and directory from "update/v306 to v310/files/" to "public_html/"</strong>
+                    </p>
+                    <p>Change all slug from live tv category</p>
+                    <p><strong>Done!</strong></p>
+                    <p>Contact here if you fetch any issue: <a href="http://desk.spagreen.net" target="_blank">Help desk</a></p>
+                    <p>or you may email us with cPanel Access,Envato username &amp; Purchase code here: <a href="mailto:support@spagreen.net">support@spagreen.net</a></p>
+                </div>
+            </div>
+
+            
+
+            <div class="panel" id="v311">
+                <div class="panel-body">
+                    <h2>Update V310 to V311 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file.
+                        <br> Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>Click choose file and brows "ovoo311.zip" file from unziped folder "main_file\update\v310 to v311"
+                        <br>Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v312">
+                <div class="panel-body">
+                    <h2>Update V311 to V312 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        Unzip main_file.
+                        <br> Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>Click choose file and brows "ovoo312.zip" file from unziped folder "main_file\update\v311 to v312"
+                        <br>Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v320">
+                <div class="panel-body">
+                    <h2>Update V3.1.2 to V3.2.0 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>
+                        1.  Create Full site backup(Manually)- Recommended.<br>
+                        2.  Create a Database backup from phpmyadmin(Manually)- Recommended.<br>
+                        3.  Unzip main_file and open "update/v312 to v320".<br>
+                        4.  login to database adminpanel(phpmyadmin,adminer) then import update.sql file from "update/v312 to v320/database/" to your current database.<br/>
+                        5.  Upload and replace all files and directory from "update/v312 to v320/files/" to "public_html/"</strong>
+                    </p>
+                    <p><strong>Done!</strong></p>
+                    <p>Contact here if you fetch any issue: <a href="http://desk.spagreen.net" target="_blank">Help desk</a></p>
+                    <p>or you may email us with cPanel Access,Envato username &amp; Purchase code here: <a href="mailto:support@spagreen.net">support@spagreen.net</a></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v321">
+                <div class="panel-body">
+                    <h2>Update V320 to V321 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file from "main_file\update\v320 to v321\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo321.zip" file from unziped folder "main_file\update\v320 to v321"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v322">
+                <div class="panel-body">
+                    <h2>Update V321 to V322 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file from "main_file\update\v321 to v322\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo322.zip" file from unziped folder "main_file\update\v321 to v322"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v323">
+                <div class="panel-body">
+                    <h2>Update V321 to V322 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file & folder from "main_file\update\v322 to v323\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo323.zip" file from unziped folder "main_file\update\v322 to v323"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p>If you have multitple language active then Upload and replace all file from "main_file\update\v322 to v323\langauge" to "public_html\application\language\language_name"</p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v324">
+                <div class="panel-body">
+                    <h2>Update V323 to V324 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file & folder from "main_file\update\v323 to v324\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo324.zip" file from unziped folder "main_file\update\v323 to v324"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v325">
+                <div class="panel-body">
+                    <h2>Update V324 to V325 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file & folder from "main_file\update\v324 to v325\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo325.zip" file from unziped folder "main_file\update\v324 to v325"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v326">
+                <div class="panel-body">
+                    <h2>Update V325 to V326 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo325.zip" file from unziped folder "main_file\update\v325 to v326"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+            <div class="panel" id="v327">
+                <div class="panel-body">
+                    <h2>Update V326 to V327 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file from "main_file\update\v326 to v327\files" to "public_html\application" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo327.zip" file from unziped folder "main_file\update\v326 to v327"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+            <div class="panel" id="v328">
+                <div class="panel-body">
+                    <h2>Update V327 to V328 <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p>First change directory premission to writable/777 for thoes folder "application/controllers", "application/config", "application/models", "application/views"</p>
+                    <p>Then follow bellow step</p>
+                    <p>
+                        1. Unzip main_file.
+                        <br>2. Upload and replace all file from "main_file\update\v327 to v328\files" to "public_html" directory
+                        <br>3. Login to admin panel then goto update from Setting &gt;&gt; Update
+                        <br>4. Click choose file and brows "ovoo327.zip" file from unziped folder "main_file\update\v327 to v328"
+                        <br>5. Then click "process update button" and wait untill complete.
+                    </p>
+                    <p><strong>Done!</strong></p>
+                </div>
+            </div>
+
+
+
+            <div class="panel" id="changelog">
+                <div class="panel-body">
+                    <h2>Change Log <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+                    <p><strong><a href="https://1.envato.market/ovoo">See Change Log here</a></strong></p>
+                </div>
+            </div>
+
+    <!-- SOURCES & CREDITS -->
+    <div class="panel" id="credits">
+        <div class="panel-body">
+            <h2>About Author &amp; Credits <a href="#welcome" class="a-to-top"><i class="glyphicon glyphicon-chevron-up"></i></a></h2>
+            <h3><span style="color: #3366ff;">Credits</span></h3>
+            <ul style="list-style-type: disc;">
+                <li><a href="http://www.php.net" target="_blank">PHP</a>, <a href="https://www.mysql.com/" target="_blank">MySQL</a>, <a href="http://www.apache.org/" target="_blank">Apache</a></li>
+                <li><a href="https://codeigniter.com/" target="_blank">PHP Codeigniter Framwork</a>, </li>
+                <li><a href="https://jquery.com/" target="_blank">JQuery</a>, <a href="https://jqueryui.com/" target="_blank">JQueryUI</a></li>
+                <li><a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a></li>
+                <li><a href="http://ionicons.com/" target="_blank">Ion Icon</a></li>
+                <li><a href="https://limonte.github.io/sweetalert2/" target="_blank">SweetAlert2</a></li>
+                <li><a href="https://www.datatables.net/" target="_blank">jqueryDataTable</a></li>
+                <li><a href="http://summernote.org/" target="_blank">SummerNote</a></li>
+                <li><a href="https://notifyjs.com/" target="_blank">NotifyJs</a></li>
+                <li><a href="https://select2.github.io/" target="_blank">Select2</a></li>
+                <li><a href="http://parsleyjs.org/" target="_blank">Form Parsley</a></li>
+                <li><a href="https://github.com/pratikborsadiya" target="_blank">Admin Templete</a></li>
+            </ul>
+            <h3><span style="color: #3366ff;">Demo Contents</span></h3>
+            <ul style="list-style-type: disc;">
+                <li>Movies: <a href="http://www.ovoo.tv" target="_blank">www.ovoo.tv</a></li>
+                <li>Posts: <a href="http://www.mtv.com" target="_blank">www.mtv.com</a></li>
+            </ul>
+            <h3><span style="color: #3366ff;">Other php Script application in codecanyon </span></h3>
+            <ul style="list-style-type: disc;">
+                <li><a href="https://codecanyon.net/item/oxoo-android-live-tv-movie-portal-app-with-powerful-admin-panel/23526581?ref=spagreen" target="_blank">OXOO - Android Live TV & Movie Portal App with Powerful Admin Panel</a></li>
+                <li><a href="https://codecanyon.net/item/itnowwarranty-inventory-tracking-system/20626228?ref=spagreen" target="_blank">ITNOW - IT Warranty & Inventory Tracking System</a></li>
+                <li><a href="https://codecanyon.net/item/ajax-envato-purchase-code-checker/19017633?ref=spagreen" target="_blank">Ajax Envato Purchase Code Checker</a></li>
+            </ul>
+            <h3><span style="color: #3366ff;">Special Thanks and Dedicated </span></h3>
+            <ul style="list-style-type: disc;">
+                <p>Our parents And Spa Green Creative family</p>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

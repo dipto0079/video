@@ -1,0 +1,2 @@
+1.Upload and overwrite all file to root directory
+2.Import update.sql from phpmyadmin

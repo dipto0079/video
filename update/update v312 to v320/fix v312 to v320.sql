@@ -1,0 +1,1 @@
+ALTER TABLE `slider` ADD `action_type` VARCHAR(250) NULL AFTER `publication`, ADD `action_btn_text` VARCHAR(250) NULL DEFAULT 'Watch Now' AFTER `action_type`, ADD `action_id` INT(50) NULL AFTER `action_btn_text`, ADD `action_url` TEXT NULL AFTER `action_id`, ADD `order` INT NULL DEFAULT '1' AFTER `action_url`;

@@ -1,0 +1,5 @@
+1. upload and replace/overwrite all directory to public_htm/root directory
+	application
+	assets
+	system
+2. import update.sql to you current database

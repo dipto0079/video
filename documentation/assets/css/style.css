@@ -1,0 +1,174 @@
+.spagreen-logo {
+    width: 106px;
+    height: 23px;
+    display: block;
+    background: url('../img/ovoo-logo.png') no-repeat center center;
+    margin: 10px 15px !important;
+    margin-right: 15px !important;
+}
+#nav-side {
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    width: 200px;
+    position: fixed;
+    border-radius: 0;
+}
+#nav-side ul.sidebar-nav {
+    overflow: auto;
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+#nav-side ul.sidebar-nav li {
+    margin: 0;
+    padding: 0;
+}
+#nav-side ul.sidebar-nav ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+#nav-side ul.sidebar-nav li a {
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none !important;
+    color: #bbb;
+    background: rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+#nav-side ul.sidebar-nav ul a {
+    padding-left: 30px;
+    background: rgba(0,0,0,0.6);
+}
+#nav-side ul.sidebar-nav ul ul a {
+    padding-left: 45px;
+}
+#nav-side ul.sidebar-nav i.glyphicon {
+    float: right;
+    font-size: 8px;
+    margin-top: 5px;
+}
+#nav-side ul.sidebar-nav li a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+#nav-side ul.sidebar-nav li.active > a {
+    background: #fff;
+    color: #333;
+}
+/* Main */
+#main {
+    margin-left: 200px;
+    margin-top: 50px;
+    padding: 20px;
+}
+.panel h2 {
+    background: #eee;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.panel h2 i {
+    margin-left: 20px;
+}
+.panel img,
+.embed-responsive {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin: 15px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-width: 100%;
+}
+.panel img {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.panel img:hover {
+    opacity: 1;
+}
+.panel img.enlarged {
+    opacity: 1 !important;
+}
+table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+table th,
+table td {
+    padding: 5px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+table thead tr,
+table tfoot tr {
+    background: #f8f8f8;
+}
+table .td-desc {
+    font-style: italic;
+}
+table thead tr {
+    border-bottom: 2px solid #eee;
+}
+table tfoot tr {
+    border-top: 2px solid #eee;
+}
+table tbody {
+    font-size: 13px;
+}
+/* Bootstrap */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-success {
+    border-left-color: #4cae4c;
+}
+.bs-callout-success h4 {
+    color: #4cae4c;
+}
+.bs-callout-default {
+    border-left-color: #357ebd;
+}
+.bs-callout-default h4 {
+    color: #357ebd;
+}
+code.text-success {
+    background: #efffe9;
+}
+code.text-primary {
+    background: #e8f3ff;
+}
+.a-to-top {
+    font-size: 16px;
+    vertical-align: middle;
+}
+aside span.glyphicon {
+    float: right;
+}

@@ -1,0 +1,5 @@
+1. upload and replace/overwrite all directory to /public_htm/ or /root/ or /www/ or /htdocs/ directory
+	application
+	assets
+	uploads
+2. done
